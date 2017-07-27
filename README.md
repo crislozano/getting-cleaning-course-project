@@ -1,7 +1,7 @@
 # Getting and Cleaning Data - Course Project
 Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-This repo contains an R script, run_analysis.R, does the following:
+This repo contains an R script, run_analysis.R, that does the following:
 
 1. Download the dataset and unzip it if it does not already exist in the working directory
 2. Loads the activity and feature info
