@@ -1,0 +1,237 @@
+---
+title: "Code book"
+author: "Cristina Lozano"
+date: "27/7/2017"
+output: html_document
+---
+## Code book: Coursera Getting and Cleaning Data course project
+
+The data set that this code book pertains to is located in the tidy_data.txt file of this repository.
+
+README.md will provide basic information on the scripts.
+
+
+### Index:
+
+#### Data
+#### Variables
+#### Transformation
+
+
+## Data
+
+The tidy_data.txt data file is a text file, containing space-separated values.
+
+The first row contains the names of the variables, which are listed and described in the Variables section, and the following rows contain the values of these variables.
+
+## Variables
+
+Each row contains, for a given subject and activity, 79 averaged signal measurements.
+
+#### Identifiers
+
+`subject`
+
+Subject identifier, integer, ranges from 1 to 30.
+
+`activity`
+
+Activity identifier, string with 6 possible values:
+
+`WALKING`
+`WALKING_UPSTAIRS`
+`WALKING_DOWNSTAIRS`
+`SITTING`
+`STANDING`
+`LAYING`
+
+
+
+#### Time-domain signals
+
+##### Average time-domain body acceleration in the X, Y and Z directions:
+
+timeDomainBodyAccelerometerMeanX
+timeDomainBodyAccelerometerMeanY
+timeDomainBodyAccelerometerMeanZ
+Standard deviation of the time-domain body acceleration in the X, Y and Z directions:
+
+timeDomainBodyAccelerometerStandardDeviationX
+timeDomainBodyAccelerometerStandardDeviationY
+timeDomainBodyAccelerometerStandardDeviationZ
+
+##### Average time-domain gravity acceleration in the X, Y and Z directions:
+
+timeDomainGravityAccelerometerMeanX
+timeDomainGravityAccelerometerMeanY
+timeDomainGravityAccelerometerMeanZ
+
+##### Standard deviation of the time-domain gravity acceleration in the X, Y and Z directions:
+
+timeDomainGravityAccelerometerStandardDeviationX
+timeDomainGravityAccelerometerStandardDeviationY
+timeDomainGravityAccelerometerStandardDeviationZ
+
+##### Average time-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+
+timeDomainBodyAccelerometerJerkMeanX
+timeDomainBodyAccelerometerJerkMeanY
+timeDomainBodyAccelerometerJerkMeanZ
+
+##### Standard deviation of the time-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+
+timeDomainBodyAccelerometerJerkStandardDeviationX
+timeDomainBodyAccelerometerJerkStandardDeviationY
+timeDomainBodyAccelerometerJerkStandardDeviationZ
+
+##### Average time-domain body angular velocity in the X, Y and Z directions:
+
+timeDomainBodyGyroscopeMeanX
+timeDomainBodyGyroscopeMeanY
+timeDomainBodyGyroscopeMeanZ
+
+##### Standard deviation of the time-domain body angular velocity in the X, Y and Z directions:
+
+timeDomainBodyGyroscopeStandardDeviationX
+timeDomainBodyGyroscopeStandardDeviationY
+timeDomainBodyGyroscopeStandardDeviationZ
+
+##### Average time-domain body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
+
+timeDomainBodyGyroscopeJerkMeanX
+timeDomainBodyGyroscopeJerkMeanY
+timeDomainBodyGyroscopeJerkMeanZ
+
+##### Standard deviation of the time-domain body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
+
+timeDomainBodyGyroscopeJerkStandardDeviationX
+timeDomainBodyGyroscopeJerkStandardDeviationY
+timeDomainBodyGyroscopeJerkStandardDeviationZ
+
+##### Average and standard deviation of the time-domain magnitude of body acceleration:
+
+timeDomainBodyAccelerometerMagnitudeMean
+timeDomainBodyAccelerometerMagnitudeStandardDeviation
+
+##### Average and standard deviation of the time-domain magnitude of gravity acceleration:
+
+timeDomainGravityAccelerometerMagnitudeMean
+timeDomainGravityAccelerometerMagnitudeStandardDeviation
+
+##### Average and standard deviation of the time-domain magnitude of body acceleration jerk (derivation of the acceleration in time):
+
+timeDomainBodyAccelerometerJerkMagnitudeMean
+timeDomainBodyAccelerometerJerkMagnitudeStandardDeviation
+
+##### Average and standard deviation of the time-domain magnitude of body angular velocity:
+
+timeDomainBodyGyroscopeMagnitudeMean
+timeDomainBodyGyroscopeMagnitudeStandardDeviation
+
+##### Average and standard deviation of the time-domain magnitude of body angular velocity jerk (derivation of the angular velocity in time):
+
+timeDomainBodyGyroscopeJerkMagnitudeMean
+timeDomainBodyGyroscopeJerkMagnitudeStandardDeviation
+
+#### Frequency-domain signals
+
+##### Average frequency-domain body acceleration in the X, Y and Z directions:
+
+frequencyDomainBodyAccelerometerMeanX
+frequencyDomainBodyAccelerometerMeanY
+frequencyDomainBodyAccelerometerMeanZ
+
+##### Standard deviation of the frequency-domain body acceleration in the X, Y and Z directions:
+
+frequencyDomainBodyAccelerometerStandardDeviationX
+frequencyDomainBodyAccelerometerStandardDeviationY
+frequencyDomainBodyAccelerometerStandardDeviationZ
+
+##### Weighted average of the frequency components of the frequency-domain body acceleration in the X, Y and Z directions:
+
+frequencyDomainBodyAccelerometerMeanFrequencyX
+frequencyDomainBodyAccelerometerMeanFrequencyY
+frequencyDomainBodyAccelerometerMeanFrequencyZ
+
+##### Average frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+
+frequencyDomainBodyAccelerometerJerkMeanX
+frequencyDomainBodyAccelerometerJerkMeanY
+frequencyDomainBodyAccelerometerJerkMeanZ
+
+##### Standard deviation of the frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+
+frequencyDomainBodyAccelerometerJerkStandardDeviationX
+frequencyDomainBodyAccelerometerJerkStandardDeviationY
+frequencyDomainBodyAccelerometerJerkStandardDeviationZ
+
+##### Weighted average of the frequency components of the frequency-domain body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
+
+frequencyDomainBodyAccelerometerJerkMeanFrequencyX
+frequencyDomainBodyAccelerometerJerkMeanFrequencyY
+frequencyDomainBodyAccelerometerJerkMeanFrequencyZ
+
+##### Average frequency-domain body angular velocity in the X, Y and Z directions:
+
+frequencyDomainBodyGyroscopeMeanX
+frequencyDomainBodyGyroscopeMeanY
+frequencyDomainBodyGyroscopeMeanZ
+
+##### Standard deviation of the frequency-domain body angular velocity in the X, Y and Z directions:
+
+frequencyDomainBodyGyroscopeStandardDeviationX
+frequencyDomainBodyGyroscopeStandardDeviationY
+frequencyDomainBodyGyroscopeStandardDeviationZ
+
+##### Weighted average of the frequency components of the frequency-domain body angular velocity in the X, Y and Z directions:
+
+frequencyDomainBodyGyroscopeMeanFrequencyX
+frequencyDomainBodyGyroscopeMeanFrequencyY
+frequencyDomainBodyGyroscopeMeanFrequencyZ
+
+##### Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body acceleration:
+
+frequencyDomainBodyAccelerometerMagnitudeMean
+frequencyDomainBodyAccelerometerMagnitudeStandardDeviation
+frequencyDomainBodyAccelerometerMagnitudeMeanFrequency
+
+##### Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body acceleration jerk (derivation of the acceleration in time):
+
+frequencyDomainBodyAccelerometerJerkMagnitudeMean
+frequencyDomainBodyAccelerometerJerkMagnitudeStandardDeviation
+frequencyDomainBodyAccelerometerJerkMagnitudeMeanFrequency
+
+##### Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body angular velocity:
+
+frequencyDomainBodyGyroscopeMagnitudeMean
+frequencyDomainBodyGyroscopeMagnitudeStandardDeviation
+frequencyDomainBodyGyroscopeMagnitudeMeanFrequency
+
+##### Average, standard deviation, and weighted average of the frequency components of the frequency-domain magnitude of body angular velocity jerk (derivation of the angular velocity in time):
+
+frequencyDomainBodyGyroscopeJerkMagnitudeMean
+frequencyDomainBodyGyroscopeJerkMagnitudeStandardDeviation
+frequencyDomainBodyGyroscopeJerkMagnitudeMeanFrequency
+
+#### Transformations
+
+The zip file containing the source data is located at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+
+The following transformations were applied to the source data:
+
+1. Download the dataset and unzip it if it does not already exist in the working directory
+
+2. Loads the activity and feature info
+
+3. Loads both the training and test datasets, leaving only the ones which contain the mean and standard deveation
+
+4. Loads the activity and subject data for each dataset, and merges those columns with the dataset
+
+5. Merges all datasets
+
+6. Read columns and create vectors for: ID, mean and SD
+
+7. Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair.
+
+8. Generate a new .txt with tidy data.
+
